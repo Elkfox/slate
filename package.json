@@ -1,7 +1,7 @@
 {
-  "name": "slate",
-  "private": true,
+  "name": "@elkfox/slate",
   "author": "Shopify Inc.",
+  "version": "0.14.1",
   "description": "A theme scaffold and command line tool for developing Shopify themes.",
   "keywords": [
     "slate",
@@ -10,12 +10,15 @@
     "CLI"
   ],
   "engine": ">=8.9.4",
+  "main": "jest.config.js",
   "homepage": "https://shopify.github.io/slate/",
-  "bugs": "https://github.com/Shopify/slate/issues",
+  "bugs": {
+    "url": "https://github.com/Shopify/slate/issues"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Shopify/slate.git"
+    "url": "git+https://github.com/Shopify/slate.git"
   },
   "scripts": {
     "test": "jest --silent",
@@ -51,5 +54,8 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "directories": {
+    "doc": "docs"
+  }
 }
